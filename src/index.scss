@@ -1,9 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 // Screens styling
 @import "./screens/index";
 @import "./components/index";
 
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+  }
+
+#root{
+min-height: 100vh;
+}
+
 body {
     margin: 0;
+    padding: 0;
+    background-color: $backGround;
 }
