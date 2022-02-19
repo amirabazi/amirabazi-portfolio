@@ -12,7 +12,7 @@ const Contact = () => {
         <div className="contact">
             <h1>If you like my work feel free to contact me</h1>
             <form className="contact-form">
-                <Input type="text" placeHolder="Name" valueSetter={setFormData} />
+                <Input type="text" placeHolder="Name" valueSetter={ } />
             </form>
         </div>
     );
