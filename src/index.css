@@ -43,7 +43,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 50px;
+  padding: 20px 50px;
 }
 
 .homepage .homepage-about .about-left h1 {
@@ -75,8 +75,21 @@
           justify-content: space-between;
 }
 
-.homepage .homepage-about .about-left .about-expiriance .objective {
-  text-align: end;
+.homepage .homepage-about .about-left .about-expiriance .companies p {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.homepage .homepage-about .about-left .about-expiriance .companies p:hover {
+  color: #033;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.homepage .homepage-about .about-left .about-expiriance .companies .clicked {
+  font-weight: 600;
+  color: #033;
+  text-decoration: underline;
 }
 
 .homepage .homepage-about .about-left .about-expiriance .objective .objective-top h4 {
@@ -92,7 +105,15 @@
 }
 
 .homepage .homepage-about .about-left .about-expiriance .objective .objective-bottom p {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 350px;
+}
+
+.homepage .homepage-about .about-left .about-expiriance .objective .objective-bottom p .tick {
+  font-size: 10px;
+  margin-right: 5px;
 }
 
 .homepage .homepage-about .about-right {
@@ -127,6 +148,12 @@
           align-items: center;
 }
 
+@media screen and (max-width: 1035px) {
+  .homepage .homepage-about {
+    height: 100%;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .homepage .homepage-about .about-left {
     margin-top: 20px;
@@ -135,10 +162,39 @@
     font-size: 4.5rem;
     line-height: 4rem;
   }
+  .homepage .homepage-about .about-left .about-expiriance {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .homepage .homepage-about .about-left .about-expiriance .companies {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .homepage .homepage-about .about-left .about-expiriance .companies p {
+    margin: 10px 20px 10px 0px;
+  }
   .homepage .homepage-about .about-right img {
     height: 340px;
     width: 340px;
   }
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px;
 }
 
 .footer {

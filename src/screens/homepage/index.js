@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Fade from 'react-reveal/Fade';
 import Avatar from '../../assets/img/emoji.png'
 import Project from "../../components/project";
+import { comp2000, proceraSoft } from "../../projectData";
+import { FaCheck } from "react-icons/fa";
+
 
 const Homepage = () => {
+
+    const [active, setActive] = useState(0);
+    const [companyData, setCompanyData] = useState({
+        company: String,
+        time: String,
+        tasks: [""],
+    });
+
+    useEffect(() => {
+        setCompanyData(comp2000)
+    }, []);
+
     return (
         <div className="homepage">
             <div id="about" className="homepage-about">
@@ -16,20 +31,30 @@ const Homepage = () => {
                         <h3>Where I've Worked:</h3>
                         <div className="about-expiriance">
                             <div className="companies">
-                                <p>COMP-2000</p>
-                                <p>ProceraSoft</p>
+                                <p className={active === 0 ? 'clicked' : ''}
+                                    onClick={() => {
+                                        setCompanyData(comp2000)
+                                        setActive(0);
+                                    }}>COMP-2000</p>
+                                <p className={active === 1 ? 'clicked' : null}
+                                    onClick={() => {
+                                        setCompanyData(proceraSoft)
+                                        setActive(1);
+                                    }}>ProceraSoft</p>
                             </div>
                             <div className="objective">
                                 <div className="objective-top">
-                                    <h4>Frontend developer <span>@Company</span></h4>
-                                    <p>June 2021 - Present</p>
+                                    <h4>Frontend developer <span>@{companyData.company}</span></h4>
+                                    <p>{companyData.time}</p>
                                 </div>
                                 <div className="objective-bottom">
-                                    <p>Write modern, performant, maintainable code for a diverse array of client and internal projects</p>
-                                    <p>Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript</p>
-                                    <p>Work with a variety of different languages, platforms, frameworks such as JavaScript, TypeScript, React, Node</p>
-                                    <p>Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness
-                                    </p>
+                                    {
+                                        companyData.tasks.map((data, i) => {
+                                            return (
+                                                <p key={i}><FaCheck className="tick" />{data}</p>
+                                            )
+                                        })
+                                    }
                                 </div>
                             </div>
                         </div>

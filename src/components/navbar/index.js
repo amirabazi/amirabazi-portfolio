@@ -33,16 +33,17 @@ const Navbar = () => {
             <Link to="/">
                 <img className='navbar-logo' src={ZendevLogo} alt="logo" />
             </Link>
+
             {activateHamMenu === false ?
                 <div className="navbar-navigation">
                     <HashLink to="/#about">
-                        <p>About me</p>
+                        <p>ABOUT ME</p>
                     </HashLink>
                     <HashLink to="/#services">
-                        <p>Services</p>
+                        <p>SERVICES</p>
                     </HashLink>
                     <Link to="/contact">
-                        <p>Contact</p>
+                        <p>CONTACT</p>
                     </Link>
                 </div>
                 :
@@ -61,13 +62,13 @@ const Navbar = () => {
                 : "navbar-links-mobile"}>
                 <div className="hamburger-navigation">
                     <HashLink to="/#about">
-                        <p onClick={() => { setOpen(false); }}>About me</p>
+                        <p onClick={() => { setOpen(false); }}>ABOUT ME</p>
                     </HashLink>
                     <HashLink to="/#services">
-                        <p onClick={() => { setOpen(false); }}>Services</p>
+                        <p onClick={() => { setOpen(false); }}>SERVICES</p>
                     </HashLink>
                     <Link to="/contact">
-                        <p onClick={() => { setOpen(false); }}>Contact</p>
+                        <p onClick={() => { setOpen(false); }}>CONTACT</p>
                     </Link>
                 </div>
             </div>
