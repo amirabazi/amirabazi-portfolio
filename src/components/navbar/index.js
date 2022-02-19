@@ -60,13 +60,16 @@ const Navbar = () => {
                 ? "navbar-links-mobile open"
                 : "navbar-links-mobile"}>
                 <div className="hamburger-navigation">
-                    <p onClick={() => { setOpen(false); }}>About me</p>
-                    <p onClick={() => { setOpen(false); }}>Services</p>
+                    <HashLink to="/#about">
+                        <p onClick={() => { setOpen(false); }}>About me</p>
+                    </HashLink>
+                    <HashLink to="/#services">
+                        <p onClick={() => { setOpen(false); }}>Services</p>
+                    </HashLink>
                     <Link to="/contact">
                         <p onClick={() => { setOpen(false); }}>Contact</p>
                     </Link>
                 </div>
-
             </div>
         </div>
     )

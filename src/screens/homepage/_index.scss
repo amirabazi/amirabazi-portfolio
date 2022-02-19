@@ -30,26 +30,67 @@
             h3:nth-child(3){
                 color: $zendevGreen;
                }
-            }
             p{
                 max-width: 500px;
             }
+
+            .about-expiriance{
+                display: flex;
+                align-items: baseline;
+                justify-content: space-between;                
+                .companies{
+
+                }
+
+                .objective{
+                    text-align: end;
+                    .objective-top{
+                        
+                        h4{
+                            margin:0;
+                            span{
+                                color:$zendevGreen;
+                            }
+                        }
+                        p{
+                            margin:0;
+                        }
+                    }
+                    .objective-bottom{
+
+                        p{
+                            max-width: 350px;
+                        }
+                    }
+                }
+            }
+
+            }
+
+
             
+            .about-right{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                img{
+                    width: 420px;
+                    height: 420px;
+                    object-fit: cover;
+                }
+            }
         }
         
-        .about-right{
+        .homepage-services{
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-
-            img{
-                width: 420px;
-                height: 420px;
-                object-fit: cover;
-            }
         }
+        
     }
-}
+
 
 @media screen and (max-width: 550px){
     .homepage{
