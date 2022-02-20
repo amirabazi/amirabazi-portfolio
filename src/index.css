@@ -206,6 +206,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
 }
 
 .contact .contact-form .contact-input {
@@ -222,6 +225,54 @@
 
 .contact .contact-form .contact-input:active {
   outline: none;
+}
+
+.contact .contact-form .textarea-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact .contact-form .textarea-input textarea {
+  padding: 5px 10px;
+  border: 1px solid #d1eed5;
+  border-radius: 6px;
+  margin: 5px 0;
+  width: 300px;
+  padding-left: 30px;
+  min-width: 300px;
+  min-height: 200px;
+  max-width: 300px;
+  max-height: 200px;
+}
+
+.contact .contact-form .textarea-input textarea:focus {
+  outline: 1px solid #3c9;
+}
+
+.contact .contact-form .textarea-input textarea:active {
+  outline: none;
+}
+
+.contact .contact-form button {
+  padding: 5px 10px;
+  background-color: #3c9;
+  border: 1px solid #d1eed5;
+  border-radius: 6px;
+  margin: 5px 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact .contact-form button:hover {
+  opacity: 0.9;
+}
+
+.contact .contact-form .notification {
+  font-size: 0.7rem;
+  margin: 0;
+  text-align: center;
+  color: #3c9;
 }
 
 .footer {

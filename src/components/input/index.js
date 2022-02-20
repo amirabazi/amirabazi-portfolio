@@ -4,11 +4,12 @@ import { useState } from 'react'
 const Input = (props) => {
 
     return (
-        <>
+        <div>
             {props?.icon &&
-                <div className="input-icon">{props?.icon}</div>
+                <span className="input-icon">{props?.icon}</span>
             }
-            <input type={props?.type}
+            <input required
+                type={props?.type}
                 className={props?.icon ? 'input-class ' + props?.className : props?.className}
                 style={props?.style}
                 value={props?.value}
@@ -18,7 +19,7 @@ const Input = (props) => {
                     props?.changeHandler(e);
                 }}
             />
-        </>
+        </div >
     )
 }
 
