@@ -3,52 +3,35 @@
 
 .contact{
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 100px;
     height: calc(100vh - 160px);
     h2{
         text-align: center;
     }
-
-    .contact-form{
+    .contact-wrapper{
         display: flex;
-        flex-direction: column;
-        border-radius: 6px;
-        padding: 20px;
-        -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1); 
-        box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
-
-        .contact-input{
-            padding: 5px 10px;
-            border: 1px solid $lightGreen;
-            border-radius: 6px;
-            margin: 5px 0;
-            width: 300px;
-
-            &:focus{
-                outline: 1px solid $zendevGreen;
-            }
-            &:active{
-                outline: none;
-            }
-        }
-
-        .textarea-input{
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        .contact-form{
             display: flex;
+            flex-direction: column;
+            border-radius: 6px;
+            margin: 10px 0;
+            padding: 20px;
+            -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1); 
+            box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
 
-            textarea{
+            .contact-input{
                 padding: 5px 10px;
                 border: 1px solid $lightGreen;
                 border-radius: 6px;
                 margin: 5px 0;
                 width: 300px;
-                padding-left: 30px;
-                min-width: 300px;
-                min-height: 200px;
-                max-width: 300px;
-                max-height: 200px;
 
                 &:focus{
                     outline: 1px solid $zendevGreen;
@@ -57,26 +40,56 @@
                     outline: none;
                 }
             }
-        }
-        button{
-            padding: 5px 10px;
-            background-color: $zendevGreen;
-            border: 1px solid $lightGreen;
-            border-radius: 6px;
-            margin: 5px 0;
-            font-weight: 600;
-            cursor: pointer;
 
-            &:hover{
-                opacity: 0.9;
+            .textarea-input{
+                display: flex;
+
+                textarea{
+                    padding: 5px 10px;
+                    border: 1px solid $lightGreen;
+                    border-radius: 6px;
+                    margin: 5px 0;
+                    width: 300px;
+                    padding-left: 30px;
+                    min-width: 300px;
+                    min-height: 200px;
+                    max-width: 300px;
+                    max-height: 200px;
+
+                    &:focus{
+                        outline: 1px solid $zendevGreen;
+                    }
+                    &:active{
+                        outline: none;
+                    }
+                }
+            }
+            button{
+                padding: 5px 10px;
+                background-color: $zendevGreen;
+                border: 1px solid $lightGreen;
+                border-radius: 6px;
+                margin: 5px 0;
+                font-weight: 600;
+                cursor: pointer;
+
+                &:hover{
+                    opacity: 0.9;
+                }
+            }
+            .notification{
+                align-items: center;
+                font-size: 0.7.5rem;
+                margin:0;
+                text-align: center;
+                color: $zendevGreen;
             }
         }
-        .notification{
-            align-items: center;
-            font-size: 0.7.5rem;
-            margin:0;
+        .info{
             text-align: center;
-            color: $zendevGreen;
+            p{
+                margin: 5px 0;
+            }
         }
     }
 }

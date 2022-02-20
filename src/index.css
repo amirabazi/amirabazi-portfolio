@@ -213,13 +213,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -231,7 +230,22 @@
   text-align: center;
 }
 
-.contact .contact-form {
+.contact .contact-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contact .contact-wrapper .contact-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -240,12 +254,13 @@
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 6px;
+  margin: 10px 0;
   padding: 20px;
   -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
 }
 
-.contact .contact-form .contact-input {
+.contact .contact-wrapper .contact-form .contact-input {
   padding: 5px 10px;
   border: 1px solid #d1eed5;
   border-radius: 6px;
@@ -253,21 +268,21 @@
   width: 300px;
 }
 
-.contact .contact-form .contact-input:focus {
+.contact .contact-wrapper .contact-form .contact-input:focus {
   outline: 1px solid #3c9;
 }
 
-.contact .contact-form .contact-input:active {
+.contact .contact-wrapper .contact-form .contact-input:active {
   outline: none;
 }
 
-.contact .contact-form .textarea-input {
+.contact .contact-wrapper .contact-form .textarea-input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contact .contact-form .textarea-input textarea {
+.contact .contact-wrapper .contact-form .textarea-input textarea {
   padding: 5px 10px;
   border: 1px solid #d1eed5;
   border-radius: 6px;
@@ -280,15 +295,15 @@
   max-height: 200px;
 }
 
-.contact .contact-form .textarea-input textarea:focus {
+.contact .contact-wrapper .contact-form .textarea-input textarea:focus {
   outline: 1px solid #3c9;
 }
 
-.contact .contact-form .textarea-input textarea:active {
+.contact .contact-wrapper .contact-form .textarea-input textarea:active {
   outline: none;
 }
 
-.contact .contact-form button {
+.contact .contact-wrapper .contact-form button {
   padding: 5px 10px;
   background-color: #3c9;
   border: 1px solid #d1eed5;
@@ -298,11 +313,11 @@
   cursor: pointer;
 }
 
-.contact .contact-form button:hover {
+.contact .contact-wrapper .contact-form button:hover {
   opacity: 0.9;
 }
 
-.contact .contact-form .notification {
+.contact .contact-wrapper .contact-form .notification {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -310,6 +325,14 @@
   margin: 0;
   text-align: center;
   color: #3c9;
+}
+
+.contact .contact-wrapper .info {
+  text-align: center;
+}
+
+.contact .contact-wrapper .info p {
+  margin: 5px 0;
 }
 
 .footer {

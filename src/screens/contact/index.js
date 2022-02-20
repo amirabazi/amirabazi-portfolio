@@ -47,44 +47,51 @@ const Contact = () => {
         <div className="contact">
             <Fade bottom >
                 <h2>If you like my work feel free to contact me</h2>
-                <form className="contact-form" onSubmit={(e) => { submitMessage(e) }}>
-                    <Input type="text"
-                        icon={<FaUserAlt />}
-                        placeHolder="Full Name"
-                        className="contact-input"
-                        value={formData?.name}
-                        changeHandler={nameHandle} />
-                    <Input type="text"
-                        icon={<FaMailBulk />}
-                        placeHolder="Mail"
-                        className="contact-input"
-                        value={formData?.mail}
-                        changeHandler={mailHandle} />
-                    <Input type="text"
-                        icon={<FaAlignJustify />}
-                        placeHolder="Subject"
-                        className="contact-input"
-                        value={formData?.subject}
-                        changeHandler={subjectHandle} />
-                    <div className="textarea-input">
-                        <span className="input-icon"><BiText /></span>
-                        <textarea required
-                            name="message"
-                            id="message"
-                            placeholder="Message"
-                            cols="30"
-                            rows="10"
-                            value={formData?.message}
-                            onChange={(e) => { messageHandle(e) }}
-                        >
-                        </textarea>
+                <div className="contact-wrapper">
+                    <form className="contact-form" onSubmit={(e) => { submitMessage(e) }}>
+                        <Input type="text"
+                            icon={<FaUserAlt />}
+                            placeHolder="Full Name"
+                            className="contact-input"
+                            value={formData?.name}
+                            changeHandler={nameHandle} />
+                        <Input type="text"
+                            icon={<FaMailBulk />}
+                            placeHolder="Mail"
+                            className="contact-input"
+                            value={formData?.mail}
+                            changeHandler={mailHandle} />
+                        <Input type="text"
+                            icon={<FaAlignJustify />}
+                            placeHolder="Subject"
+                            className="contact-input"
+                            value={formData?.subject}
+                            changeHandler={subjectHandle} />
+                        <div className="textarea-input">
+                            <span className="input-icon"><BiText /></span>
+                            <textarea required
+                                name="message"
+                                id="message"
+                                placeholder="Message"
+                                cols="30"
+                                rows="10"
+                                value={formData?.message}
+                                onChange={(e) => { messageHandle(e) }}
+                            >
+                            </textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                        {messageSent ?
+                            <p className="notification">Message sent sucessfully</p>
+                            : null
+                        }
+                    </form>
+                    <div className="info">
+                        <p>Amir Abazi</p>
+                        <p>BiH, Sarajevo</p>
+                        <p>abaziamirr@gmail.com</p>
                     </div>
-                    <button type="submit">Send Message</button>
-                    {messageSent ?
-                        <p className="notification">Message sent sucessfully</p>
-                        : null
-                    }
-                </form>
+                </div>
             </Fade>
         </div>
     );
