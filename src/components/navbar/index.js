@@ -3,7 +3,6 @@ import ZendevLogo from '../../assets/img/logo.png';
 import { Link } from 'react-router-dom';
 import { HashLink } from "react-router-hash-link";
 
-
 const Navbar = () => {
     const [activateHamMenu, setActivateHamMenu] = useState(false);
     const [open, setOpen] = useState(false);

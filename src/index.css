@@ -40,9 +40,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   padding: 20px 50px;
 }
 
@@ -76,28 +76,25 @@
 }
 
 .homepage .homepage-about .about-left .about-expiriance .companies p {
-  font-size: 1.1rem;
+  border-radius: 6px;
+  padding: 0 10px;
   cursor: pointer;
 }
 
 .homepage .homepage-about .about-left .about-expiriance .companies p:hover {
   color: #033;
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
 }
 
 .homepage .homepage-about .about-left .about-expiriance .companies .clicked {
+  background-color: #d1eed5;
   font-weight: 600;
   color: #033;
-  text-decoration: underline;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .homepage .homepage-about .about-left .about-expiriance .objective .objective-top h4 {
   margin: 0;
-}
-
-.homepage .homepage-about .about-left .about-expiriance .objective .objective-top h4 span {
-  color: #3c9;
 }
 
 .homepage .homepage-about .about-left .about-expiriance .objective .objective-top p {
@@ -140,12 +137,33 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.homepage .homepage-services .services-content {
+  padding: 0 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 1120px) {
+  .homepage .homepage-services .services-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media screen and (max-width: 1035px) {
@@ -154,7 +172,7 @@
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   .homepage .homepage-about .about-left {
     margin-top: 20px;
   }
@@ -178,6 +196,17 @@
     height: 340px;
     width: 340px;
   }
+  .homepage .homepage-services .services-content {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .homepage .homepage-services .services-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .contact {
@@ -198,6 +227,10 @@
   height: calc(100vh - 160px);
 }
 
+.contact h2 {
+  text-align: center;
+}
+
 .contact .contact-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -206,6 +239,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-radius: 6px;
   padding: 20px;
   -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
@@ -269,7 +303,10 @@
 }
 
 .contact .contact-form .notification {
-  font-size: 0.7rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.7 0.5rem;
   margin: 0;
   text-align: center;
   color: #3c9;
@@ -329,12 +366,6 @@
   left: 25%;
   font-size: 20px;
   cursor: pointer;
-}
-
-.footer .footer-socials .icon:hover {
-  color: #033;
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
 }
 
 .navbar {
@@ -517,6 +548,76 @@
   }
   .navbar .navbar-hamburger-container {
     right: 30px;
+  }
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 400px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 25px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+.project .project-image {
+  height: 250px;
+  width: 100%;
+}
+
+.project .project-image img {
+  border-radius: 6px 6px 0 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.project .project-content {
+  text-align: center;
+  padding: 0 5px;
+}
+
+.project .project-content .card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0 20px;
+}
+
+.project .project-content .card-footer a {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: black;
+}
+
+.project .project-content .card-footer a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #3c9;
+}
+
+@media screen and (max-width: 600px) {
+  .project {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .project {
+    width: 250px;
   }
 }
 

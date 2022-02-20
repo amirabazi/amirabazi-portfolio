@@ -1,8 +1,6 @@
 import React from 'react'
-import { useState } from 'react'
 
 const Input = (props) => {
-
     return (
         <div>
             {props?.icon &&

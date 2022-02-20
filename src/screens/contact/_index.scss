@@ -8,10 +8,14 @@
     align-items: center;
     padding: 100px;
     height: calc(100vh - 160px);
+    h2{
+        text-align: center;
+    }
 
     .contact-form{
         display: flex;
         flex-direction: column;
+        border-radius: 6px;
         padding: 20px;
         -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1); 
         box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
@@ -68,7 +72,8 @@
             }
         }
         .notification{
-            font-size: 0.7rem;
+            align-items: center;
+            font-size: 0.7.5rem;
             margin:0;
             text-align: center;
             color: $zendevGreen;
