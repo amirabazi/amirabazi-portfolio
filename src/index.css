@@ -195,6 +195,33 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 100px;
+  height: calc(100vh - 160px);
+}
+
+.contact .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .contact-form .contact-input {
+  padding: 5px 10px;
+  border: 1px solid #d1eed5;
+  border-radius: 6px;
+  margin: 5px 0;
+  width: 300px;
+}
+
+.contact .contact-form .contact-input:focus {
+  outline: 1px solid #3c9;
+}
+
+.contact .contact-form .contact-input:active {
+  outline: none;
 }
 
 .footer {
@@ -440,6 +467,18 @@
   .navbar .navbar-hamburger-container {
     right: 30px;
   }
+}
+
+.input-icon {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: #d1eed5;
+  cursor: default;
+}
+
+.input-class {
+  padding-left: 30px !important;
 }
 
 * {

@@ -3,14 +3,22 @@ import { useState } from 'react'
 
 const Input = (props) => {
 
-
     return (
-        <input type={props?.type}
-            placeholder={props?.placeHolder}
-            onChange={(e) => {
-                props?.valueSetter(e.target.value);
-            }}
-        />
+        <>
+            {props?.icon &&
+                <div className="input-icon">{props?.icon}</div>
+            }
+            <input type={props?.type}
+                className={props?.icon ? 'input-class ' + props?.className : props?.className}
+                style={props?.style}
+                value={props?.value}
+                placeholder={props?.placeHolder}
+                disabled={props?.disabled ?? false}
+                onChange={(e) => {
+                    props?.changeHandler(e);
+                }}
+            />
+        </>
     )
 }
 
