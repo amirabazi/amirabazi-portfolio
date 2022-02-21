@@ -93,6 +93,11 @@
           transform: scale(1.15);
 }
 
+.homepage .homepage-about .about-left .about-expiriance .objective {
+  border-left: 1px solid rgba(204, 204, 204, 0.6);
+  padding: 5px 10px;
+}
+
 .homepage .homepage-about .about-left .about-expiriance .objective .objective-top h4 {
   margin: 0;
 }
@@ -184,6 +189,9 @@
   .homepage .homepage-about {
     height: 100%;
   }
+  .homepage .homepage-about .about-left .companies p {
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -205,6 +213,11 @@
   }
   .homepage .homepage-about .about-left .about-expiriance .companies p {
     margin: 10px 20px 10px 0px;
+  }
+  .homepage .homepage-about .about-left .about-expiriance .objective {
+    border-left: none;
+    border-top: 1px solid rgba(204, 204, 204, 0.6);
+    padding: 5px 0;
   }
   .homepage .homepage-about .about-right img {
     height: 340px;

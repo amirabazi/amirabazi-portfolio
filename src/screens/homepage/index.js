@@ -27,7 +27,7 @@ const Homepage = () => {
                             <h3>HI THERE I'M</h3>
                             <h1>AMIR ABAZI</h1>
                             <h3>WEB DEVELOPER</h3>
-                            <p>working with React and Node, willing to work with other technologies and learn new things.</p>
+                            <p>focused on creating interactive digital experiences on the web.</p>
                         </div>
                         <div>
                             <h3>Where I've Worked:</h3>

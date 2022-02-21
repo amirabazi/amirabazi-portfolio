@@ -58,6 +58,8 @@
                 }
 
                 .objective{
+                    border-left: 1px solid rgba(204, 204, 204, 0.6);
+                    padding: 5px 10px;
                     .objective-top{
                         
                         h4{
@@ -153,6 +155,13 @@
 
         .homepage-about{
             height:  100%;
+            .about-left{
+                .companies{
+                    p{
+                        font-size: 0.9rem;
+                    }
+                }
+            }
         }
     }
 }
@@ -175,7 +184,13 @@
                             margin:10px 20px 10px 0px;
                         }
                     }
+                    .objective{
+                        border-left: none;
+                        border-top: 1px solid rgba(204, 204, 204, 0.6);
+                        padding: 5px 0;
+                    }
                 }
+                
             }
             .about-right{
                 img{
