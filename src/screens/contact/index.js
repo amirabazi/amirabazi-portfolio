@@ -45,7 +45,7 @@ const Contact = () => {
 
     return (
         <div className="contact">
-            <Fade bottom >
+            <Fade top >
                 <h2>If you like my work feel free to contact me</h2>
                 <div className="contact-wrapper">
                     <form className="contact-form" onSubmit={(e) => { submitMessage(e) }}>
