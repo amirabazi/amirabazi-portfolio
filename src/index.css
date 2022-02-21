@@ -256,10 +256,6 @@
   height: calc(100vh - 160px);
 }
 
-.contact h2 {
-  text-align: center;
-}
-
 .contact .contact-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -288,6 +284,11 @@
   padding: 20px;
   -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact .contact-wrapper .contact-form h2 {
+  width: 300px;
+  text-align: center;
 }
 
 .contact .contact-wrapper .contact-form .contact-input {
@@ -368,13 +369,19 @@
 @media screen and (max-width: 600px) {
   .contact {
     padding: 50px;
-    height: 100%;
+    height: 100vh;
   }
   .contact h2 {
     font-size: 1.1rem;
   }
   .contact .contact-wrapper .info {
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contact .contact-wrapper {
+    margin-top: 0;
   }
 }
 

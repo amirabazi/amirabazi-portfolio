@@ -45,10 +45,12 @@ const Contact = () => {
 
     return (
         <div className="contact">
+
             <Fade top >
-                <h2>If you like my work feel free to contact me</h2>
                 <div className="contact-wrapper">
                     <form className="contact-form" onSubmit={(e) => { submitMessage(e) }}>
+                        <h2>If you like my work feel free to contact me</h2>
+
                         <Input type="text"
                             icon={<FaUserAlt />}
                             placeHolder="Full Name"
