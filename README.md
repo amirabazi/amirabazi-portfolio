@@ -1,3 +1,11 @@
+Za izradu task-a/projekta koristeno je: React.js i SASS.
+Za pokretanje projekta potrebno je:
+   - klonirati repositorij - git clone {git@git-link};
+   - npm install - za instalaciju dependency-a;
+   - npm start - za pokretanje projekta;
+
+Live preview mozete pogledati na: https://amirabazi.codes
+
 #Task info: 
 
 Theme: Portfolio creation
