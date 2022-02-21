@@ -94,8 +94,8 @@
 }
 
 .homepage .homepage-about .about-left .about-expiriance .objective {
-  border-left: 1px solid rgba(204, 204, 204, 0.6);
-  padding: 5px 10px;
+  border-left: 1px solid rgba(204, 204, 204, 0.5);
+  padding: 5px 0 0 15px;
 }
 
 .homepage .homepage-about .about-left .about-expiriance .objective .objective-top h4 {
@@ -216,7 +216,7 @@
   }
   .homepage .homepage-about .about-left .about-expiriance .objective {
     border-left: none;
-    border-top: 1px solid rgba(204, 204, 204, 0.6);
+    border-top: 1px solid rgba(204, 204, 204, 0.5);
     padding: 5px 0;
   }
   .homepage .homepage-about .about-right img {
