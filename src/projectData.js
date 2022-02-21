@@ -28,6 +28,7 @@ export const projects = [
         img: Todolist,
         link: "https://github.com/amirabazi/todoCrud-react",
     },
+
 ];
 
 export const comp2000 = {

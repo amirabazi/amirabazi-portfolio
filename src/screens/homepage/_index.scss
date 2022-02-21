@@ -104,14 +104,38 @@
             align-items: center;
 
             .services-content{
-                padding: 0 100px;
+                padding: 0 300px;
                 display: flex;
                 flex-wrap: wrap;
-                justify-content:space-between
+                justify-content: space-around;
+                align-items: center;
             }
         }
         
     }
+
+@media screen and (max-width: 1520px){
+    .homepage{
+        
+         .homepage-services{
+            .services-content{
+                padding: 0 200px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1350px){
+    .homepage{
+        
+         .homepage-services{
+            .services-content{
+                padding: 0 100px;
+            }
+        }
+    }
+}
+    
 
 @media screen and (max-width: 1120px){
     .homepage{

@@ -69,7 +69,7 @@ const Homepage = () => {
             </div>
             <div id="services" className="homepage-services">
                 <Fade bottom>
-                    <h1>Some Things I'v Built</h1>
+                    <h1>Some Things I've Built</h1>
                     <div className="services-content">
                         {projects.map((data, i) => {
                             return <Project key={i}
