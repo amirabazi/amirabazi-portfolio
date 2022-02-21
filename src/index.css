@@ -394,15 +394,6 @@
           align-items: center;
 }
 
-.footer p {
-  color: rgba(0, 0, 0, 0.123);
-}
-
-.footer p:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
-}
-
 .footer .footer-socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -430,7 +421,7 @@
   position: absolute;
   top: 25%;
   left: 25%;
-  font-size: 20px;
+  font-size: 21px;
   cursor: pointer;
 }
 
