@@ -223,6 +223,9 @@
     height: 340px;
     width: 340px;
   }
+  .homepage .homepage-services h1 {
+    font-size: 1.5rem;
+  }
   .homepage .homepage-services .services-content {
     padding: 0;
   }
@@ -360,6 +363,19 @@
 
 .contact .contact-wrapper .info p {
   margin: 5px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    padding: 50px;
+    height: 100%;
+  }
+  .contact h2 {
+    font-size: 1.1rem;
+  }
+  .contact .contact-wrapper .info {
+    margin-top: 20px;
+  }
 }
 
 .footer {

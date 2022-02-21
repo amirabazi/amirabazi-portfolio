@@ -95,3 +95,21 @@
 }
 
 
+@media screen and (max-width: 600px){
+    .contact{
+        padding: 50px;
+        height: 100%;
+
+        h2{
+            font-size: 1.1rem;
+        }
+
+        .contact-wrapper{
+
+            .info{
+                margin-top: 20px;
+            }
+        }
+    }
+    
+}
